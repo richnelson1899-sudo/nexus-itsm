@@ -4,7 +4,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://nexus-itsm-backend.vercel.app";
 
 type LoginResponse = {
   access_token?: string;
