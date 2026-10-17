@@ -7,10 +7,13 @@ async function bootstrap() {
 
   // Allow requests from the NEXUS ITSM frontend
   app.enableCors({
-    origin: 'http://localhost:3001',
-    methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
-  });
+  origin: [
+    'http://localhost:3001',
+    'https://nexus-itsm-vert.vercel.app',
+  ],
+  methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+});
 
   // Global request validation
   app.useGlobalPipes(

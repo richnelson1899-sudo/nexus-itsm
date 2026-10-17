@@ -10,7 +10,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://nexus-itsm-backend.vercel.app";
 const PAGE_SIZE = 6;
 
 type UserRole = "EMPLOYEE" | "IT_SUPPORT" | "IT_MANAGER" | "ADMIN";
